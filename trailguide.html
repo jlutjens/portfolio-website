@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="img/favicon.ico" rel="shortcut icon">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway&display=swap" rel="stylesheet">
     <title>TrailGuide</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -13,10 +14,10 @@
   <body>
     <!--header-->
     <header>
-      <div>
-        <img src="img/logo.svg" alt="Jeremy Lutjens" >
+      <div class="container">
+        <img class="logo" src="img/logo.svg" alt="Jeremy Lutjens" >
         <nav>
-          <ul>
+          <ul class="navigation">
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -27,7 +28,7 @@
     <!--end header-->
     <main>
       <div id="case-study"><!--open seciton block-->
-        <div><!--open container/wrapper-->
+        <div class="container"><!--open container/wrapper-->
           <div><!--open container used for picture-->
             <picture>
               <source srcset="img/trailguide/headline-mobile.jpg" media="(max-width:767px)">
@@ -57,7 +58,7 @@
           </div><!--end container used for text section-->
           <div><!--open container used for text section-->
             <h2>Design Tools</h2>
-            <picture>
+            <picture id="small-image">
               <source srcset="img/trailguide/design-tools-mobile.jpg" media="(max-width:767px)">
               <img src="img/trailguide/design-tools-desktop.jpg" alt="My Image">
             </picture>
@@ -337,28 +338,28 @@
     </main>
     <!--footer-->
     <footer id="contact">
-      <div>
+      <div class="container">
         <h2>Get in Touch</h2>
         <p><!--open paragraph-->
           Do you like my work and want to discuss opportunities? Please get in touch! Skype me at <a href="skype:jeremy.lutjens">jeremy.lutjens</a>. Prefer sending an email?
         </p><!--end paragraph-->
-        <div>
+        <div class="row">
           <a href="mailto:jeremylutjens@gmail.com" class="button contact">Email me</a>
         </div><!--button label-->
         <div>
           <!--Social Media Layout and Placeholders-->
-          <a href="https://www.linkedin.com/in/jeremylutjens/" target="_blank">
+          <a href="https://www.linkedin.com/in/jeremylutjens/" class="icon" target="_blank">
             <!--LinkedIn Icon-->
-            <svg height="512px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="g5891"><path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;"/><g id="shapes"><rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667"/><path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0" style="fill:#fff;fill-rule:nonzero;"/><path d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z" id="path15" style="fill:#fff;fill-rule:nonzero;"/></g></g>
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="g5891"><path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;"/><g id="shapes"><rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667"/><path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0" style="fill:#fff;fill-rule:nonzero;"/><path d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z" id="path15" style="fill:#fff;fill-rule:nonzero;"/></g></g>
             </svg>
           </a>
-          <a href="https://dribbble.com/JeremyLutjens" target="_blank">
+          <a href="https://dribbble.com/JeremyLutjens" class="icon" target="_blank">
             <!--LinkedIn Icon-->
-            <svg height="512px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x38_9-dribbble"><g><g><path d="M479.689,254.381c0,123.878-100.148,224.298-223.688,224.298     c-123.541,0-223.689-100.42-223.689-224.298c0-123.87,100.148-224.291,223.689-224.291     C379.541,30.09,479.689,130.511,479.689,254.381L479.689,254.381z M479.689,254.381" style="fill:#F4427E;"/><path d="M256.002,16.75C124.441,16.75,17.397,124.083,17.397,256c0,131.915,107.044,239.25,238.605,239.25     c131.559,0,238.602-107.335,238.602-239.25C494.604,124.083,387.561,16.75,256.002,16.75L256.002,16.75z M464.684,257.791     c-50.518-13.364-102.328-14.92-151.688-4.721c-6.74-16.87-14.016-33.469-21.836-49.853     c44.648-20.939,85.928-49.317,122.135-84.397c31.945,36.756,51.482,84.666,51.482,137.18     C464.777,256.6,464.684,257.162,464.684,257.791L464.684,257.791z M392.211,97.708c-33.82,32.747-72.297,59.421-113.992,78.923     c-22.281-42.77-48.346-83.62-77.844-122.2c17.746-4.935,36.332-7.771,55.627-7.771C308.047,46.662,355.615,65.973,392.211,97.708     L392.211,97.708z M170.908,65.021c30.272,38.639,56.85,79.791,79.487,122.88c-62.635,23.984-130.636,33.2-198.727,25.214     C65.472,146.843,110.693,92.115,170.908,65.021L170.908,65.021z M47.224,256c0-4.486,0.389-8.884,0.684-13.28     c17.658,2.096,35.315,3.47,52.908,3.47c56.133,0,111.282-11.007,162.967-31.191c7.156,14.954,13.896,30.113,20.131,45.486     c-73.309,22.071-138.624,69.143-182.587,135.623C67.83,358.966,47.224,309.888,47.224,256L47.224,256z M123.128,417.34     c40.443-63.756,102.122-108.708,171.526-129.044c18.848,52.036,32.418,106.073,40.324,161.374     c-24.367,10.05-51.031,15.669-78.977,15.669C205.566,465.339,159.245,447.308,123.128,417.34L123.128,417.34z M362.951,435.434     c-8.199-52.694-21.207-104.279-39.01-154.075c45.066-8.492,92.221-6.491,138.15,6.521     C452.459,350.563,415.146,404.033,362.951,435.434L362.951,435.434z M362.951,435.434" style="fill:#DA1B66;"/></g></g></g><g id="Layer_1"/>
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x38_9-dribbble"><g><g><path d="M479.689,254.381c0,123.878-100.148,224.298-223.688,224.298     c-123.541,0-223.689-100.42-223.689-224.298c0-123.87,100.148-224.291,223.689-224.291     C379.541,30.09,479.689,130.511,479.689,254.381L479.689,254.381z M479.689,254.381" style="fill:#F4427E;"/><path d="M256.002,16.75C124.441,16.75,17.397,124.083,17.397,256c0,131.915,107.044,239.25,238.605,239.25     c131.559,0,238.602-107.335,238.602-239.25C494.604,124.083,387.561,16.75,256.002,16.75L256.002,16.75z M464.684,257.791     c-50.518-13.364-102.328-14.92-151.688-4.721c-6.74-16.87-14.016-33.469-21.836-49.853     c44.648-20.939,85.928-49.317,122.135-84.397c31.945,36.756,51.482,84.666,51.482,137.18     C464.777,256.6,464.684,257.162,464.684,257.791L464.684,257.791z M392.211,97.708c-33.82,32.747-72.297,59.421-113.992,78.923     c-22.281-42.77-48.346-83.62-77.844-122.2c17.746-4.935,36.332-7.771,55.627-7.771C308.047,46.662,355.615,65.973,392.211,97.708     L392.211,97.708z M170.908,65.021c30.272,38.639,56.85,79.791,79.487,122.88c-62.635,23.984-130.636,33.2-198.727,25.214     C65.472,146.843,110.693,92.115,170.908,65.021L170.908,65.021z M47.224,256c0-4.486,0.389-8.884,0.684-13.28     c17.658,2.096,35.315,3.47,52.908,3.47c56.133,0,111.282-11.007,162.967-31.191c7.156,14.954,13.896,30.113,20.131,45.486     c-73.309,22.071-138.624,69.143-182.587,135.623C67.83,358.966,47.224,309.888,47.224,256L47.224,256z M123.128,417.34     c40.443-63.756,102.122-108.708,171.526-129.044c18.848,52.036,32.418,106.073,40.324,161.374     c-24.367,10.05-51.031,15.669-78.977,15.669C205.566,465.339,159.245,447.308,123.128,417.34L123.128,417.34z M362.951,435.434     c-8.199-52.694-21.207-104.279-39.01-154.075c45.066-8.492,92.221-6.491,138.15,6.521     C452.459,350.563,415.146,404.033,362.951,435.434L362.951,435.434z M362.951,435.434" style="fill:#DA1B66;"/></g></g></g><g id="Layer_1"/>
             </svg>
           </a>
-          <a href="https://www.behance.net/jeremylutjens" target="_blank">
-             <svg height="512px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="behance__x2C__social__x2C__media"><g><path d="M205.918,215.982c0-11.053-9.094-19.982-20.176-19.982H136v40    h49.743C196.824,236,205.918,227.049,205.918,215.982z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;"/><path d="M185.743,266H136v50h59.972    c11.071,0,19.86-12.942,19.86-24.021C215.832,270.719,196.824,266,185.743,266z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;"/><path d="M434.479,16H77.521C43.717,16,16,43.718,16,77.522v356.955    C16,468.281,43.717,496,77.521,496h356.957C468.286,496,496,468.281,496,434.478V77.522C496,43.718,468.286,16,434.479,16z     M296,166h90v30h-90V166z M195.972,356H96V156h99.972c27.521,0,49.936,22.331,49.936,50.146c0,17.872-9.646,33.703-23.832,42.496    c19.573,6.805,34.058,25.445,34.058,47.293C256.133,329.107,228.88,356,195.972,356z M416,286H306.081    c1.407,22,16.164,40.031,35.179,40.031c18.718,0,29.23-12.031,32.916-30.031h40.576c-6.805,34-28.374,60.123-73.492,60.123    c-45.4,0-75.204-33.466-75.204-75.167c0-41.426,29.717-74.871,75.117-74.871c45.118,0,74.827,33.446,74.827,74.864    C416,282.64,416,284,416,286z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;"/><path d="M341.26,236.207c-17.593,0-30.927,11.793-33.213,29.793    h66.129C371.332,248,358.563,236.207,341.26,236.207z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;"/></g></g><g id="Layer_1"/>
+          <a href="https://www.behance.net/jeremylutjens" class="icon" target="_blank">
+             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="behance__x2C__social__x2C__media"><g><path d="M205.918,215.982c0-11.053-9.094-19.982-20.176-19.982H136v40    h49.743C196.824,236,205.918,227.049,205.918,215.982z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;"/><path d="M185.743,266H136v50h59.972    c11.071,0,19.86-12.942,19.86-24.021C215.832,270.719,196.824,266,185.743,266z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;"/><path d="M434.479,16H77.521C43.717,16,16,43.718,16,77.522v356.955    C16,468.281,43.717,496,77.521,496h356.957C468.286,496,496,468.281,496,434.478V77.522C496,43.718,468.286,16,434.479,16z     M296,166h90v30h-90V166z M195.972,356H96V156h99.972c27.521,0,49.936,22.331,49.936,50.146c0,17.872-9.646,33.703-23.832,42.496    c19.573,6.805,34.058,25.445,34.058,47.293C256.133,329.107,228.88,356,195.972,356z M416,286H306.081    c1.407,22,16.164,40.031,35.179,40.031c18.718,0,29.23-12.031,32.916-30.031h40.576c-6.805,34-28.374,60.123-73.492,60.123    c-45.4,0-75.204-33.466-75.204-75.167c0-41.426,29.717-74.871,75.117-74.871c45.118,0,74.827,33.446,74.827,74.864    C416,282.64,416,284,416,286z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;"/><path d="M341.26,236.207c-17.593,0-30.927,11.793-33.213,29.793    h66.129C371.332,248,358.563,236.207,341.26,236.207z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;"/></g></g><g id="Layer_1"/>
              </svg>
           </a>
         </div>
