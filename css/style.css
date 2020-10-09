@@ -172,6 +172,8 @@ a:active {
   color: #0086ea;
   text-transform: uppercase;
   border: 2px solid #0086ea;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .button.contact:hover {
