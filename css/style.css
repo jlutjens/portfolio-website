@@ -70,7 +70,7 @@ nav > ul > li > a:active {
 }
 
 main {
-  padding-top: 90px;
+  padding-top: 75px;
 }
 
 body {
@@ -81,10 +81,6 @@ body {
   line-height: 1.6;
   margin: auto;
   color: #252525;
-}
-
-footer {
-  display: inline-block;
 }
 
 /* Font Syles */
@@ -145,6 +141,8 @@ a:active {
   display: inline-block;
   background-color: #0086ea;
   color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
   font-weight: 400;
   padding: 10px;
   border-radius: 5px;
@@ -171,6 +169,7 @@ a:active {
   background-color: transparent;
   color: #0086ea;
   text-transform: uppercase;
+  font-size: 14px;
   border: 2px solid #0086ea;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -267,7 +266,7 @@ a:active {
   padding: 20px 0;
   display: flex;
   width: 100%;
-  min-height: 400px;
+  min-height: 500px;
   align-items: center
 }
 
@@ -290,6 +289,11 @@ a:active {
 }
 
 #about-page h3 { margin-top: 0;}
+
+#contact {
+  text-align: center;
+  margin: auto;
+}
 
 /* Responsive screen size stylings */
 
