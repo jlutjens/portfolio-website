@@ -364,6 +364,10 @@ padding: 10px;
     margin: .55em 0;
   }
 
+  main {
+    padding-top: 93px
+  }
+
   .col-lg-7 {
     width: 58.33%;
   }
