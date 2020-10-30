@@ -11,19 +11,13 @@ Secondary Color (Gray): #7f8386;
 header {
   width: 100%;
   background-color: #fafafa;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   margin: 0 auto;
-  text-align: center;
   border-bottom: 1px solid #ebebeb;
   position: fixed;
   -webkit-box-shadow: 0px 1px 8px 0px rgba(50, 50, 50, 0.20);
   -moz-box-shadow:    0px 1px 8px 0px rgba(50, 50, 50, 0.20);
   box-shadow:         0px 1px 8px 0px rgba(50, 50, 50, 0.20);
-}
-
-nav {
-  display: inline-block;
-  width: 100%;
 }
 
 nav > ul {
@@ -33,7 +27,6 @@ nav > ul {
 }
 
 nav > ul > li {
-  display: inline-block;
 }
 
 nav > ul > li > a {
@@ -70,7 +63,7 @@ nav > ul > li > a:active {
 }
 
 main {
-  padding-top: 75px;
+  padding-top: 63px;
 }
 
 body {
@@ -217,7 +210,37 @@ a:active {
 }
 
 .logo {
-  max-width: 225px;
+  max-width: 175px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  padding-right: 0;
+  right: 0;
+  top: 5px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
 }
 
 /* Animation Rules */
@@ -314,12 +337,32 @@ padding: 10px;
     margin-top: 4px;
   }
 
+  nav > ul {
+    margin: .1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
+}
+
   .col-md-6 {
   width: 50%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
+
+  nav > ul {
+    margin: .55em 0;
+  }
 
   .col-lg-7 {
     width: 58.33%;
@@ -333,5 +376,9 @@ padding: 10px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  }
+
+  .logo {
+    min-width: 250px;
   }
 }

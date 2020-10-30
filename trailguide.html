@@ -9,22 +9,27 @@
     <title>TrailGuide</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/7474b97520.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <!--header-->
     <header>
-      <div class="container">
-        <img class="logo" src="img/logo.svg" alt="Jeremy Lutjens" >
-        <nav>
-          <ul class="navigation">
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+      <header>
+        <div class="container">
+          <div class="navtoggle" id="myNavtoggle">
+            <img class="logo" src="img/logo.svg" alt="Jeremy Lutjens" >
+            <nav>
+              <ul class="navigation">
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
     <!--end header-->
     <main>
       <div id="case-study"><!--open seciton block-->
@@ -367,6 +372,11 @@
       </div>
     </footer>
     <!--end footer-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous">
+    </script>
     <script src="js/scripts.js"></script>
   </body>
 
