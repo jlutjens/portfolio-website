@@ -26,6 +26,9 @@ nav > ul {
   margin: 0;
 }
 
+nav > ul > li {
+}
+
 nav > ul > li > a {
   display: inline-block;
   padding: 0 15px;
